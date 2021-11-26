@@ -1,4 +1,5 @@
 import numpy as np
+import tensorflow
 from tensorflow import keras
 import streamlit as st
 import imageio
@@ -13,7 +14,7 @@ st.set_page_config(
 st.title("Manning VS O'Reilly Classifier")
 
 
-model = keras.models.load_model('xception_v1_03_0.983.h5')
+model = tensorflow.keras.models.load_model('xception_v1_03_0.983.h5')
 #model = make_model(learning_rate=0.001, droprate=0.6, size=25)
 #model.fit(train_ds, epochs=30, validation_data=val_ds, callbacks=[checkpoint])
 
