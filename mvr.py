@@ -1,12 +1,5 @@
 import numpy as np
-
-import tensorflow as tf
 from tensorflow import keras
-
-from keras.preprocessing import image
-from tensorflow.keras.applications.xception import preprocess_input
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-
 import streamlit as st
 import imageio
 from PIL import Image
